@@ -50,4 +50,4 @@ Criar uma classe service para o envio de e-mails.
 
 Sob Open Software License v3.0.
 ---
-⌨️ com ❤️ por [Armstrong Lohãns](https://gist.github.com/lohhans) 😊
+⌨️ com ❤️ por [João Carlos](https://gist.github.com/lohhans](https://github.com/joao31245)https://github.com/joao31245) 😊
