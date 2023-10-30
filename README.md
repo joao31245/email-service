@@ -1,7 +1,6 @@
-# Título do projeto
+# Email Service.
 
 Um projeto com uma api de serviços para enviar e-mail.
-## 🚀 Começando
 
 ### 📋 Pré-requisitos
 ```
@@ -27,27 +26,13 @@ Alterar email responsavel pelo envio, para um e-mail cadastrado na sua conta aws
 O serviço foi projetado com o intutio de ser implementavel 
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
-
 * [Spring Boot 3]([http://www.dropwizard.io/1.0.2/docs/](https://spring.io/projects/spring-boot)) - O framework web usado
 * [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
+* [AWS]([https://rometools.github.io/rome/](https://us-east-1.console.aws.amazon.com/console/home?region=us-east-1)) - Usado para enviar e-mails.
 
-## 📌 Versão
-
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
 
 ## 📄 Licença
 
 Sob Open Software License v3.0.
-
-## 🎁 Expressões de gratidão
-
-* Conte a outras pessoas sobre este projeto 📢;
-* Convide alguém da equipe para uma cerveja 🍺;
-* Um agradecimento publicamente 🫂;
-* etc.
-
-
 ---
 ⌨️ com ❤️ por [Armstrong Lohãns](https://gist.github.com/lohhans) 😊
