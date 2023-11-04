@@ -13,31 +13,96 @@ JDK Com java 17.
 Uma conta no Aws com o ses configurado.
 ```
 ### 🔧 Instalação
+Passo 1:
 ```
-Alterar propriedades do aws.
-```
-![capturalegal](https://github.com/joao31245/email-service/assets/134329276/fc58ed55-5870-4e4b-adb6-af809fc9f8cf)
-```
-Alterar email responsavel pelo envio, para um e-mail cadastrado na sua conta aws.
-```
-![capturalegal2](https://github.com/joao31245/email-service/assets/134329276/9b29f16e-3c3b-4efe-a2fd-d7add280d428)
-
-## 📦 Implantação
-O serviço foi projetado com o intutio de ser implementavel em qualquer aplicação que respeite o Clean Code.
+Configurar ses:
 
 ```
-Criar uma interface que implemente o caso de uso para o envio de e-mails.
+```
+Pesquise o serviço:
+```
+<img src="https://github.com/joao31245/picpay/assets/134329276/a7ac972d-74e1-4c2a-9e69-f8b330fc65ff" />
+
+
+```
+Criar nova identidade:
+```
+![Ir até identidades verificadas](https://github.com/joao31245/picpay/assets/134329276/59128d73-0033-4571-9615-f2fbbf494269)
+
+<img src="https://github.com/joao31245/picpay/assets/134329276/73c7b4ef-4b59-4680-ba75-2d778c110268" />
+Apos criar a identidade, confirme por e-mail.
+Passo 2:
+
+```
+Configurar IAM:
 ```
 
 ```
-Criar uma interface de gateway para o envio dos e-mails
+Pesqiosar IAM:
 ```
+
+![Pesquisar IAM](https://github.com/joao31245/picpay/assets/134329276/20dd7ac6-b9ff-470e-b6bc-70ebbadc707b)
+
 ```
-Configurar o aws em uma classe configuration.
+Vá até usuários
 ```
+![Vá até usuários](https://github.com/joao31245/picpay/assets/134329276/7fa90164-82ea-4ad8-9f4e-db4547b0294f)
+
 ```
-Criar uma classe service para o envio de e-mails.
+Crie um novo usuário
 ```
+
+![Criar usuários](https://github.com/joao31245/picpay/assets/134329276/ce3e3338-c246-431e-9419-88b9789dea1e)
+
+
+```
+Anexar politicas diretamente
+```
+
+![anexar politicas diretamente](https://github.com/joao31245/picpay/assets/134329276/8e1fd958-dc95-4f31-be33-b0a2d38b34f8)
+
+
+```
+Adicionar politicas do ses
+```
+
+![Selecionar politicas do ses](https://github.com/joao31245/picpay/assets/134329276/d85bcb6c-ce93-4200-9766-bac557a7b173)
+
+
+```
+Selecione o usuário criado, vá em credenciais de segurança e clique em criar chave de acesso:
+```
+
+![Criar chave de acesso](https://github.com/joao31245/picpay/assets/134329276/5afac4b3-1021-465b-b407-115c818f9a05)
+
+```
+Selecione esse tipo para chave de acesso:
+```
+
+![Selecionar tipo de chave de acesso](https://github.com/joao31245/picpay/assets/134329276/a39a5e93-cb68-4b64-951f-374e5684c904)
+
+
+Após criar a identidade e a chave de acesso será necessário passar elas pro código.
+
+Passo 3:
+
+```
+Primeiro nas propiedades:
+```
+Passe as credenciais do seu usuário para o codigo no arquivo application.propeties.
+
+![Passe as credenciais no código](https://github.com/joao31245/picpay/assets/134329276/d2de6b48-f08e-44ee-8689-b04d44d3ace9)
+
+```
+Agora no código
+```
+
+No pacote infra selecione o pacote ses e a classe SesConfig e então mude o e-mail para o email da identidade cadastrada.
+
+![Mude o email](https://github.com/joao31245/picpay/assets/134329276/e131d0e2-0d08-4343-89fc-0d216c5e15b2)
+
+
+Como a conta do ses é gratuita, você só pode enviar e-mail para identidades cadastradas.
 
 ## 🛠️ Construído com
 
